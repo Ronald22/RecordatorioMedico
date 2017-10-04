@@ -1,7 +1,7 @@
 exports.dbConfig = {
     userName: 'sa', // update me
     password: 'ronald22', // update me
-    server: 'localhost\\RONALDCP', // update me
+    server: 'localhost', // update me
     port:49172,
     options: {
         database: 'RecordatorioMedico', //update me
