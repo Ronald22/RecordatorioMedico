@@ -1,7 +1,7 @@
 exports.dbConfig = {
 	user: "sa",
 	password: "ronald22",
-	server: "RONALD",
+	server: "Ronald",
 	database: "RecordatorioMedico",
 	port: 1433,
 	options: {
