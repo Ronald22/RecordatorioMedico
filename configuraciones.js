@@ -1,7 +1,7 @@
 exports.dbConfig = {
 	user: "sa",
 	password: "ronald22",
-	server: "192.168.0.13",
+	server: "localhost",
 	database: "RecordatorioMedico",
 	port: 1433,
 	options: {
@@ -9,5 +9,5 @@ exports.dbConfig = {
     }
 };
 
-exports.webPort = process.env.PORT || 1337;
+exports.webPort = process.env.PORT || 3000;
 exports.httpMsgsFormat = "JSON";
