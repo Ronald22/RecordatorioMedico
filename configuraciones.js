@@ -3,7 +3,11 @@ exports.dbConfig = {
 	password: "ronald22",
 	server: "localhost\\RONALDCP",
 	database: "RecordatorioMedico",
-	port: 1433
+	port: 1433,
+	options: {
+        encrypt: false // Use this if you're on Windows Azure
+        //,instanceName: 'SQLEXPRESS'
+    }
 };
 
 exports.webPort = process.env.PORT || 3000;
