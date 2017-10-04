@@ -3,7 +3,7 @@ exports.dbConfig = {
 	password: "ronald22",
 	server: "localhost",
 	database: "RecordatorioMedico",
-	port: 80,
+	port: 1433,
 	options: {
         encrypt: true
     }
