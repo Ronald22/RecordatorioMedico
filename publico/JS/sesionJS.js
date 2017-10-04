@@ -11,7 +11,7 @@ $ (document).ready(function(){
 		if(Tipo === "administrador"){
 			$.ajax({
 				type:"GET",
-				url:"http://localhost:9000/administrador",
+				url:"http://recordatoriomedico.azurewebsites.net/administrador",
 				dataType:"json",
 				contentType:"text/plain"
 			})

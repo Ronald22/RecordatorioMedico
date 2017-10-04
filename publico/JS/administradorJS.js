@@ -73,7 +73,7 @@ $(document).ready(function() {
 		if (!validar) {
 			$.ajax({
 				type:"GET",
-				url:"http://localhost:9000/medico",
+				url:"http://recordatoriomedico.azurewebsites.net/medico",
 				dataType:"json",
 				contentType:"text/plain"
 			}).done(function(msg){				
@@ -93,7 +93,7 @@ $(document).ready(function() {
 					datos = {cedula:cedula,usuario:usuario,contraseña:contraseña,nombre:nombre,apellido:apellido,email:email,especialidad:especialidad}				
 					$.ajax({
 						type:"POST",
-						url:"http://localhost:9000/medico",
+						url:"http://recordatoriomedico.azurewebsites.net/medico",
 						dataType:"text",
 						contentType:"application/json",
 						data: JSON.stringify(datos)
@@ -125,7 +125,7 @@ $(document).ready(function() {
 		datos = {cedula:cedula,usuario:usuario,contraseña:contraseña,nombre:nombre,apellido:apellido,email:email,especialidad:especialidad}
 		$.ajax({
 			type:"PUT",
-			url:"http://localhost:9000/medico",
+			url:"http://recordatoriomedico.azurewebsites.net/medico",
 			dataType:"text",
 			contentType:"application/json",
 			data:JSON.stringify(datos)
@@ -151,7 +151,7 @@ $(document).ready(function() {
 		tablaMedico ='<table><tr id="trEncabezado"><th class="tdCedula">Cédula</th><th class="tdNombre">Nombres</th><th class="tdUsuario">Usuario</th><th class="tdContraseña">Contraseña</th><th class="tdEmail">E-mail</th><th class="tdEspecialidad">Especialidad</th><th class="tdEditaEliminar">Editar/Eliminar</th></tr>'
 		$.ajax({
 	    	type:"GET",
-	    	url:"http://localhost:9000/medico",
+	    	url:"http://recordatoriomedico.azurewebsites.net/medico",
 	    	dataType:"json",
 	    	contentType:"text/plain"
     	}).done(function(msg){
@@ -185,7 +185,7 @@ $(document).ready(function() {
 		var parametro = $("#parametroaBuscarM").val();
 		$.ajax({
 			type:"GET",
-			url:"http://localhost:9000/medico/"+parametro,
+			url:"http://recordatoriomedico.azurewebsites.net/medico/"+parametro,
 			dataType:"json",
 			contentType:"text/plain"
 		}).done(function(msg){
@@ -223,7 +223,7 @@ $(document).ready(function() {
 
 		$.ajax({
 		    type:"DELETE",
-		    url:"http://localhost:9000/medico",
+		    url:"http://recordatoriomedico.azurewebsites.net/medico",
 		    dataType:"text",
 		    contentType:"application/json",
 		    data:JSON.stringify(datos)
@@ -239,7 +239,7 @@ $(document).ready(function() {
 		var idmodificar=$(this).attr("name");
 		$.ajax({
 		    type:"GET",
-		    url:"http://localhost:9000/medico",
+		    url:"http://recordatoriomedico.azurewebsites.net/medico",
 		    dataType:"json",
 		    contentType:"text/plain"
 		}).done(function(msg){
@@ -285,7 +285,7 @@ $(document).ready(function() {
 
 		$.ajax({
 			type:"GET",
-			url:"http://localhost:9000/enfermero",
+			url:"http://recordatoriomedico.azurewebsites.net/enfermero",
 			dataType:"json",
 			contentType:"text/plain"
 		}).done(function(msg){
@@ -305,7 +305,7 @@ $(document).ready(function() {
 				datos = {cedula:cedula,usuario:usuario,contraseña:contraseña,nombre:nombre,apellido:apellido,email:email,id_Turno:turno}				
 				$.ajax({
 					type:"POST",
-					url:"http://localhost:9000/enfermero",
+					url:"http://recordatoriomedico.azurewebsites.net/enfermero",
 					dataType:"text",
 					contentType:"application/json",
 					data: JSON.stringify(datos)
@@ -331,7 +331,7 @@ $(document).ready(function() {
 		datos = {cedula:cedula,usuario:usuario,contraseña:contraseña,nombre:nombre,apellido:apellido,email:email,id_Turno:turno}
 		$.ajax({
 			type:"PUT",
-			url:"http://localhost:9000/enfermero",
+			url:"http://recordatoriomedico.azurewebsites.net/enfermero",
 			dataType:"text",
 			contentType:"application/json",
 			data:JSON.stringify(datos)
@@ -356,7 +356,7 @@ $(document).ready(function() {
 		tablaEnfermero+='<th class="tdEmail">E-mail</th><th class="tdEspecialidad">Turno</th><th class="tdEditaEliminar">Editar/Eliminar</th></tr>'
 		$.ajax({
 	    	type:"GET",
-	    	url:"http://localhost:9000/enfermero",
+	    	url:"http://recordatoriomedico.azurewebsites.net/enfermero",
 	    	dataType:"json",
 	    	contentType:"text/plain"
     	}).done(function(msg){
@@ -392,7 +392,7 @@ $(document).ready(function() {
 		var parametro = $("#parametroaBuscarE").val();
 		$.ajax({
 			type:"GET",
-			url:"http://localhost:9000/enfermero/"+parametro,
+			url:"http://recordatoriomedico.azurewebsites.net/"+parametro,
 			dataType:"json",
 			contentType:"text/plain"
 		}).done(function(msg){
@@ -428,7 +428,7 @@ $(document).ready(function() {
 		var idmodificar=$(this).attr("name");
 		$.ajax({
 		    type:"GET",
-		    url:"http://localhost:9000/enfermero",
+		    url:"http://recordatoriomedico.azurewebsites.net/enfermero",
 		    dataType:"json",
 		    contentType:"text/plain"
 		}).done(function(msg){
@@ -455,7 +455,7 @@ $(document).ready(function() {
 		var selectTurno = '<option value="" id="opcionTurno">--- Turno ---</option>'
 		$.ajax({
 			type:"GET",
-			url:"http://localhost:9000/turno",
+			url:"http://recordatoriomedico.azurewebsites.net/turno",
 			dataType:"json",
 			contentType:"text/plain"
 		}).done(function(msg){
@@ -476,7 +476,7 @@ $(document).ready(function() {
 
 		$.ajax({
 		    type:"DELETE",
-		    url:"http://localhost:9000/enfermero",
+		    url:"http://recordatoriomedico.azurewebsites.net/enfermero",
 		    dataType:"text",
 		    contentType:"application/json",
 		    data:JSON.stringify(datos)
@@ -540,7 +540,7 @@ $(document).ready(function() {
 
 		$.ajax({
 			type:"GET",
-			url:"http://localhost:9000/paciente",
+			url:"http://recordatoriomedico.azurewebsites.net/paciente",
 			dataType:"json",
 			contentType:"text/plain"
 		}).done(function(msg){
@@ -560,7 +560,7 @@ $(document).ready(function() {
 				datos = {cedula:cedula,nombreP:nombre,apellidoP:apellido,descripcion:descripcion,habitacion:habitacion}				
 				$.ajax({
 					type:"POST",
-					url:"http://localhost:9000/paciente",
+					url:"http://recordatoriomedico.azurewebsites.net/paciente",
 					dataType:"text",
 					contentType:"application/json",
 					data: JSON.stringify(datos)
@@ -570,7 +570,7 @@ $(document).ready(function() {
 				datos2 = {cedula_Paciente:cedula, cedula_Enfermero:enfermera}
 				$.ajax({
 					type:"POST",
-					url:"http://localhost:9000/ep",
+					url:"http://recordatoriomedico.azurewebsites.net/ep",
 					dataType:"text",
 					contentType:"application/json",
 					data:JSON.stringify(datos2)
@@ -595,7 +595,7 @@ $(document).ready(function() {
 		datos = {cedula:cedula,nombreP:nombre,apellidoP:apellido,descripcion:descripcion,habitacion:habitacion}
 		$.ajax({
 			type:"PUT",
-			url:"http://localhost:9000/paciente",
+			url:"http://recordatoriomedico.azurewebsites.net/paciente",
 			dataType:"text",
 			contentType:"application/json",
 			data:JSON.stringify(datos)
@@ -604,7 +604,7 @@ $(document).ready(function() {
 		datos2 = {cedula_Paciente:cedula, cedula_Enfermero:enfermera}
 		$.ajax({
 			type:"PUT",
-			url:"http://localhost:9000/ep",
+			url:"http://recordatoriomedico.azurewebsites.net/ep",
 				dataType:"text",
 				contentType:"application/json",
 				data:JSON.stringify(datos2)
@@ -630,7 +630,7 @@ $(document).ready(function() {
 		tablaPaciente+='<th class="tdHabitacion">Habitación</th><th class="tdNombre">Enfermera</th><th class="tdDescripcion">Descripción</th><th class="tdEditaEliminar">Editar/Eliminar</th></tr>'
 		$.ajax({
 	    	type:"GET",
-	    	url:"http://localhost:9000/paciente",
+	    	url:"http://recordatoriomedico.azurewebsites.net/paciente",
 	    	dataType:"json",
 	    	contentType:"text/plain"
     	}).done(function(msg){
@@ -665,7 +665,7 @@ $(document).ready(function() {
 		var parametro = $("#parametroaBuscarP").val();
 		$.ajax({
 	    	type:"GET",
-	    	url:"http://localhost:9000/paciente/"+parametro,
+	    	url:"http://recordatoriomedico.azurewebsites.net/paciente/"+parametro,
 	    	dataType:"json",
 	    	contentType:"text/plain"
     	}).done(function(msg){
@@ -699,7 +699,7 @@ $(document).ready(function() {
 		var idmodificar=$(this).attr("name");
 		$.ajax({
 		    type:"GET",
-		    url:"http://localhost:9000/paciente",
+		    url:"http://recordatoriomedico.azurewebsites.net/paciente",
 		    dataType:"json",
 		    contentType:"text/plain"
 		}).done(function(msg){
@@ -724,7 +724,7 @@ $(document).ready(function() {
 		var selectEnfermera = '<option value="opcionEnfermera" >--- Enfermera ---</option>'
 		$.ajax({
 			type:"GET",
-			url:"http://localhost:9000/enfermero",
+			url:"http://recordatoriomedico.azurewebsites.net/enfermero",
 			dataType:"json",
 			contentType:"text/plain"
 		}).done(function(msg){
@@ -742,7 +742,7 @@ $(document).ready(function() {
 		datos={cedula:ideliminar};
 		$.ajax({
 		    type:"DELETE",
-		    url:"http://localhost:9000/paciente",
+		    url:"http://recordatoriomedico.azurewebsites.net/paciente",
 		    dataType:"text",
 		    contentType:"application/json",
 		    data:JSON.stringify(datos)
@@ -758,7 +758,7 @@ $(document).ready(function() {
 		datos2={cedula_Paciente:ideliminar};
 		$.ajax({
 		    type:"DELETE",
-		    url:"http://localhost:9000/ep",
+		    url:"http://recordatoriomedico.azurewebsites.net/ep",
 		    dataType:"text",
 		    contentType:"application/json",
 		    data:JSON.stringify(datos2)
@@ -792,7 +792,7 @@ $(document).ready(function() {
 
 		$.ajax({
 			type:"GET",
-			url:"http://localhost:9000/medicamento",
+			url:"http://recordatoriomedico.azurewebsites.net/medicamento",
 			dataType:"json",
 			contentType:"text/plain"
 		}).done(function(msg){
@@ -812,7 +812,7 @@ $(document).ready(function() {
 				datos = {id:id,nombre:nombre,tipo:tipo,descripcion:descripcion,cantidad:cantidad}				
 				$.ajax({
 					type:"POST",
-					url:"http://localhost:9000/medicamento",
+					url:"http://recordatoriomedico.azurewebsites.net/medicamento",
 					dataType:"text",
 					contentType:"application/json",
 					data: JSON.stringify(datos)
@@ -836,7 +836,7 @@ $(document).ready(function() {
 		datos = {id:id,nombre:nombre,tipo:tipo,descripcion:descripcion,cantidad:cantidad}				
 				$.ajax({
 					type:"PUT",
-					url:"http://localhost:9000/medicamento",
+					url:"http://recordatoriomedico.azurewebsites.net/medicamento",
 					dataType:"text",
 					contentType:"application/json",
 					data: JSON.stringify(datos)
@@ -862,7 +862,7 @@ $(document).ready(function() {
 		tablaMedicina+='<th class="tdtipo">Tipo</th><th class="tdHabitacion">Cantidad</th><th class="tdDescripcion2">Descripción</th><th class="tdEditaEliminar">Editar/Eliminar</th></tr>'
 		$.ajax({
 	    	type:"GET",
-	    	url:"http://localhost:9000/medicamento",
+	    	url:"http://recordatoriomedico.azurewebsites.net/medicamento",
 	    	dataType:"json",
 	    	contentType:"text/plain"
     	}).done(function(msg){
@@ -897,7 +897,7 @@ $(document).ready(function() {
 		var parametro = $("#parametroaBuscarMC").val();
 		$.ajax({
 	    	type:"GET",
-	    	url:"http://localhost:9000/medicamento/"+parametro,
+	    	url:"http://recordatoriomedico.azurewebsites.net/medicamento/"+parametro,
 	    	dataType:"json",
 	    	contentType:"text/plain"
     	}).done(function(msg){
@@ -931,7 +931,7 @@ $(document).ready(function() {
 		var idmodificar=$(this).attr("name");
 		$.ajax({
 		    type:"GET",
-		    url:"http://localhost:9000/medicamento",
+		    url:"http://recordatoriomedico.azurewebsites.net/medicamento",
 		    dataType:"json",
 		    contentType:"text/plain"
 		}).done(function(msg){
@@ -956,7 +956,7 @@ $(document).ready(function() {
 		datos={id:ideliminar};
 		$.ajax({
 		    type:"DELETE",
-		    url:"http://localhost:9000/medicamento",
+		    url:"http://recordatoriomedico.azurewebsites.net/medicamento",
 		    dataType:"text",
 		    contentType:"application/json",
 		    data:JSON.stringify(datos)
