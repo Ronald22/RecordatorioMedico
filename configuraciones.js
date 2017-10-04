@@ -1,14 +1,11 @@
 exports.dbConfig = {
-     user: 'sa', // update me
-     password: 'ronald22', // update me
-     server: 'localhost', // update me
-     database: 'RecordatorioMedico', //update me
-     port: 1433,
-     options: 
-        {
-           encrypt: true
-        }
-   }
+    userName: 'sa', // update me
+    password: 'ronald22', // update me
+    server: 'localhost', // update me
+    options: {
+        database: 'RecordatorioMedico', //update me
+        encrypt: true
+    }
 };
 
 exports.webPort = process.env.PORT || 3000;
