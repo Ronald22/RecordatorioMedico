@@ -1,5 +1,5 @@
 exports.dbConfig = {
-     userName: 'sa', // update me
+     user: 'sa', // update me
      password: 'ronald22', // update me
      server: 'localhost', // update me
      port: 1433,
