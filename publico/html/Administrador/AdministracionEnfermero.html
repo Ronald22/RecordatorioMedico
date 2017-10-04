@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <title>Administración de Enfermeros</title>
+    <link rel="stylesheet" href="../../Css/FormatoPrincipal.css">
+    <link rel="stylesheet" href="../../Css/Administrador.css">
+    <script src="../../JS/jquery.js" type="text/javascript"></script>
+    <script src="../../JS/administradorJS.js" type="text/javascript"></script>
+</head>
+<body>
+    <header>
+        <article>
+        <div class="lightbox"></div>
+        <div class="contenidoLightbox">
+          <aside>
+            <p id="pLightbox" >¿Desea eliminar al usuario <span id="spanLightbox"></span>?</p>
+          <div>
+            <input type="button" value="Sí" class="btnEliminarEnfermero" id="btnLightbox" >
+            <input type="button" value="No" class="btnNoEliminar" id="btnLightbox">
+            </div>
+          </aside>
+        </div>
+        </article>
+        <a href="../Administrador.html"><div id="encabezado"></div></a>  
+        <nav id="menu">
+            <div id="diseñoNegro"></div>
+            <div id="borde"></div>
+            <div id="diseñoMenu"> 
+                <ul>
+                    <a href="../Administrador.html"><li>Inicio</li></a>
+                    <a href="AdministracionMedico.html"><li>Médico</li></a>
+                    <a href="AdministracionEnfermero.html"><li>Enfermero/a</li></a>
+                    <a href="AdministracionMedicina.html"><li>Medicina</li></a>   
+                    <a href="AdministracionPaciente.html"><li>Pacientes</li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="contenedorPrincipal">
+        <article class="menuAcciones">
+            <input type="button" value="Registrar" id="btnMenuRegistrar" class="btnMenuAcciones" name="enfermero">
+            <input type="button" value="Consultar" id="btnMenuConsultar" class="btnMenuAcciones" name="enfermero">
+        </article>
+        <article id="contenedorRegistro">
+            <h1 id="h1Registro">Registro de Enfermeros/as</h1>
+            <article id="contenedorMensaje">
+                <p id="mensajeError_Confirmacion"></p>
+            </article>
+            <form action="" id="formRegistro">
+                <table>
+                    <tr>
+                        <td class="tdLabelRegistro"><label for="cedula" class="labelRegistro">Cédula</label></td>
+                        <td><input type="text" id="txtCedula" class="inputRegistro" placeholder="1312965054"></td>
+                    </tr>
+                    <tr>
+                        <td class="tdLabelRegistro"><label for="nombres" class="labelRegistro">Nombres</label></td>
+                        <td><input type="text" id="txtNombre" class="inputRegistro" placeholder="Maria Fernanda"></td>
+                    </tr>
+                    <tr>
+                        <td class="tdLabelRegistro"><label for="apellidos" class="labelRegistro">Apellidos</label></td>
+                        <td><input type="text" id="txtApellidos" class="inputRegistro" placeholder="Garcia Mero"></td>
+                    </tr>
+                    <tr>
+                        <td class="tdLabelRegistro"><label for="usuario" class="labelRegistro">Usuario</label></td>
+                        <td><input type="text" id="txtUsuario" class="inputRegistro" placeholder="Maria.Garcia"></td>
+                    </tr>
+                    <tr>
+                        <td class="tdLabelRegistro"><label for="contraseña" class="labelRegistro">Contraseña</label></td>
+                        <td><input type="password" id="txtContraseña" class="inputRegistro" placeholder="contraseña"></td>
+                    </tr>
+                    <tr>
+                        <td class="tdLabelRegistro"><label for="email" class="labelRegistro">E-mail</label></td>
+                        <td><input type="text" id="txtEmail" class="inputRegistro" placeholder="mafer@hotmail.es"></td>
+                    </tr>
+                    <tr>
+                        <td class="tdLabelRegistro"><label for="turno" class="labelRegistro">Turno</label></td>
+                        <td>
+                            <select name="turno" id="txtTurno" class="selectRegistro"></select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" >
+                            <div class="contenedorBtnRegistro"><input type="button" value="Guardar" id="btnEnviarEnfermero" class="btnRegistro"></div>
+                        </td>
+                    </tr>     
+                </table>
+            </form>
+        </article>
+        <article id="contenedorConsulta">
+            <h1 id="h1ConsultaMedico">Lista de Enfermeros/as Registrados</h1>
+            <article id="contenedorMensaje">
+          <p id="mensajeError_Confirmacion2"></p>
+            </article>
+            <article id="contenedorBusquedaMedico">
+              <label for="buscar">Buscar:</label>
+              <input type="text" id="parametroaBuscarE" placeholder="Ingrese la cédula o el nombre del enfermer@" >
+            </article>
+            <article id="contenedorTablaConsulta">
+          </article>        
+        </article>
+    </section>
+    <footer class="pie_pagina">
+      <div class="hr">             
+          <div class="derechos">Derechos Reservados Uleam-Facci &copy; 2017</div>     
+          <div class="cajaderedes">
+            <a href="https://www.youtube.com/" class="aRedesSociales"><img alt="Canal de youtube" class="redessociales" src="../../img/RedesSociales/youtube.png" title="Canal de youtube" /></a>
+            <a href="https://plus.google.com/" class="aRedesSociales"><img alt="siguenos en Google+" class="redessociales" src="../../img/RedesSociales/googleplus.png" title="siguenos en Google+" /></a>
+            <a href="https://www.twitter.com" class="aRedesSociales"><img alt="siguenos en Twitter" class="redessociales" src="../../img/RedesSociales/twitter.png" title="siguenos en Twitter" /></a>                
+            <a href="https://www.facebook.com/" class="aRedesSociales"><img alt="siguenos en facebook" class="redessociales" src="../../img/RedesSociales/facebook.png" title="siguenos en facebook" /></a>   
+          </div>      
+      </div>
+    </footer>       
+</body>
+</html>

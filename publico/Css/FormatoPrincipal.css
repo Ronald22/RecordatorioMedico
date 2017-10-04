@@ -1,0 +1,149 @@
+body{ 
+    margin: 0;
+    font-family:Georgia, Times, "Times New Roman", serif 
+}
+
+/*------------------------Encabezado------------------------*/
+#encabezado{
+    background: url("../img/ClinicaDelSol.bmp") no-repeat;
+    background-size: 100% 100.3%;
+    height: 320px;
+    position: relative;
+    z-index: 5
+}
+
+/*--------------------------Menu---------------------------*/
+#menu{
+    box-shadow: 0 0 10px #000;
+    height: 43px;
+    position:relative; 
+    z-index: 4;
+}
+#diseñoNegro{
+	  background:#333; 
+	  background-image: -webkit-linear-gradient(bottom, #1B1B1B 10%, #363636 55%, #1B1B1B 78%);
+    float: left;
+    width: 25% ; height: 43px;       
+}
+#borde{
+    position: absolute;
+    right: 75%;
+    border-left: 53px solid transparent;
+    border-bottom: 43px solid white
+}
+#diseñoMenu{
+	float: right;
+	width: 75%
+}
+header nav div ul{ display: block; list-style: none; margin: 0; padding: 0 0 0 2%; width: 95% ; height: 43px; }
+header nav div ul a{ display: block; color: #92DAF4; height: 43px; width: 16.5% ; float:left; }
+header nav div ul a :hover{background: url("../img/fondorange.jpg") center; -webkit-background-size: cover; 
+	-moz-background-size: cover;-o-background-size: cover; background-size: cover;}
+header nav div ul a li {display: block; text-align: center; font-weight:bold; color: #9B9B9B; padding: 12px 1%;}
+a {text-decoration: none; }
+header nav div ul a li:hover, header nav ul a li:active {color: #fff;text-decoration: none;}
+
+/*--------------------------CONTENEDOR PRINCIPAL-----------------------*/
+.contenedorPrincipal{
+   margin: 0 auto;
+   width: 90%;
+   position: relative;
+}
+/*----------------------------Menu de Acciones-------------------------*/
+.menuAcciones{
+   margin: 40px 0;
+   border-bottom: 1px solid #ccc
+}
+.btnMenuAcciones{
+   background: white;
+   border-radius:3px 3px 0 0;
+   position: relative;
+   bottom: -1px;
+   padding: 10px;
+   color: black;
+   font-weight: 600;   
+}
+#btnMenuConsultar{
+   left: -4px;
+   border-top: 1px solid white;
+   border-bottom: 1px solid #ccc;
+   border-left: 1px solid white;
+   border-right: 1px solid white;
+}
+#btnMenuConsultar:hover{
+   background: whitesmoke;
+   border-top: 1px solid #ccc;
+   border-bottom: 1px solid white;
+   border-left: 1px solid white;
+   border-right: 1px solid #ccc;
+   color: #818181;
+}
+#btnMenuConsultar, #btnMenuRegistrar:focus{
+  outline: none
+}
+#btnMenuRegistrar{
+   background: #fcfcfc;
+   border-top: 1px solid #ccc;
+   border-bottom: 1px solid white;
+   border-left: 1px solid #ccc;
+   border-right: 1px solid #ccc;
+   color: #818181;
+}
+#btnMenuRegistrar:hover{
+   background: whitesmoke;
+   border-top: 1px solid #ccc;
+   border-bottom: 1px solid white;
+   border-left: 1px solid #ccc;
+   border-right: 1px solid #ccc;
+}
+/*--------------------Contenedor de Registro---------------*/
+#contenedorRegistro{
+   position: relative;
+   border: 1px solid #ccc;
+   border-radius: 10px 10px 0 0;
+   margin-bottom: 40px;
+   font-family: verdana;
+}
+/*--------------------Contenedor de Consulta---------------*/
+#contenedorConsulta{
+   border: 1px solid #ccc;
+   border-radius: 10px 10px 0 0;
+   margin-bottom: 40px;
+   font-family: verdana;
+   display: none;
+}
+/*-----------------------PIE DE PAGINA------------------*/
+.pie_pagina{
+  	width: 100%;
+  	background-color: black;
+  	color: lightgray;
+}
+.p1{
+  	margin-bottom: 10px;
+  	height: 90%;
+  	padding-top: 10px;
+}
+.hr{
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 98%; height: 39px;
+}
+.derechos{
+  	padding:12px;  
+  	color: whitesmoke;
+  	float: left;
+  	font-size: small
+}
+.redessociales{
+  	width: 25px; height: 25px;
+  	margin: 0px 6px
+}
+.cajaderedes{
+  	padding:7px; 
+  	float: right;
+}
+.aRedesSociales{
+	display: block;
+	float: right;
+	height: 25px;
+}

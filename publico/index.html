@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Inicio de Sesión</title>
+		<link rel="stylesheet" href="Css/InicioSesion.css">
+		<script src="JS/jquery.js" type="text/javascript"></script>
+		<script src="JS/sesionJS.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<header>
+			<nav id="encabezado">
+      			<div id="diseñoBlanco"><span id="logo">RECORDATORIO MEDICO</span></div>
+      			<div id="borde"></div>
+        		<div id="diseñoNegro"></div>
+    		</nav>
+		</header>
+		<section>
+			<article id="boxPrincipal">
+				<form>
+					<ul>
+						<li><h1>BIENVENIDO</h1></li>
+						<li id="iconoInicioSesion"><img src="img/iconoInicioSesion.png" alt="inicio de sesion" id="imgInicioSesion"></li>
+						<li><p>Inicie Sesión:</p></li>
+						<li><input type="text" class="datosSesion" id="txtUsuario" placeholder="Usuario"></li>
+						<li><input type="password" class="datosSesion" id="txtContraseña" placeholder="Contraseña"></li>
+						<li>
+							<select name="Usuario" id="tipoUsuario">
+								<option value="" disabled="true" selected="true">--- Usuario ---</option>
+								<option value="administrador">Administrador</option>
+								<option value="enfermero">Enfermero/a</option>
+								<option value="doctor">Doctor/a</option>
+							</select>
+							<input type="button" value="Ingresar" id="btnIniciarSesion"> 
+						</li>
+					</ul>
+				</form>
+			</article>
+			<article id="mensaje"></article>
+		</section>
+		<footer id="pie_pagina">
+        	<div class="hr">             
+            	<div class="derechos"> 
+                	Derechos Reservados Uleam-Facci &copy; 2017  
+            	</div>     
+            	<div class="cajaderedes">
+                	<a href="https://www.youtube.com/"><img alt="Canal de youtube" class="redessociales" src="img/RedesSociales/youtube.png" title="Canal de youtube" /></a>
+                	<a href="https://plus.google.com/"><img alt="siguenos en Google+" class="redessociales" src="img/RedesSociales/googleplus.png" title="siguenos en Google+" /></a>
+                	<a href="https://www.twitter.com"><img alt="siguenos en Twitter" class="redessociales" src="img/RedesSociales/twitter.png" title="siguenos en Twitter" /></a>                
+                	<a href="https://www.facebook.com/"><img alt="siguenos en facebook" class="redessociales" src="img/RedesSociales/facebook.png" title="siguenos en facebook" /></a>   
+            	</div>      
+        	</div>
+		</footer>		
+	</body>
+</html>				

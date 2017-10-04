@@ -1,0 +1,727 @@
+/*---------------------------Sección Médico------------------------*/
+#seccionMedico{
+   background: url("../img/medico.png") no-repeat;
+	background-size: 100% 100.3%;
+   height: 470px;
+   z-index: 4
+}
+#contenedorMedico{
+   position: absolute;
+   font-family: sans-serif;
+   width: 35% ; 390px;
+   margin: 80px 7%; padding: 0 20px;
+}
+#h1Medico{
+   text-align: center;
+   font-size: 40px;
+   margin: 0
+}
+#pMedico{
+   font-size: 20px;
+   text-align: justify;
+   margin: 60px 0;
+   color: #838383;
+}
+.btnMedico{
+   width: 46%; height: 50px;
+   font-size: 18px;
+   border-radius: 3px;
+   background-color: #848484;
+   border: 1px solid #515151;
+   -moz-box-shadow:inset 0px 0px 1px rgba(100,100,100,1);
+   -webkit-box-shadow:inset 0px 0px 1px rgba(100,100,100,1);
+   box-shadow:inset 0px 0px 1px rgba(100,100,100,1);
+   background-image: -o-linear-gradient(90deg , rgb(127,127,127) 0%, rgb(166,166,166) 100%);
+   background-image: -moz-linear-gradient(90deg , rgb(127,127,127) 0%, rgb(166,166,166) 100%);
+   background-image: -webkit-linear-gradient(90deg , rgb(127,127,127) 0%, rgb(166,166,166) 100%);
+   background-image: -ms-linear-gradient(90deg , rgb(127,127,127) 0%, rgb(166,166,166) 100%);
+   background-image: linear-gradient(90deg , rgb(127,127,127) 0%, rgb(166,166,166) 100%);
+   font-family: 'Helvetica';
+   color: #FFFFFF;
+   text-shadow: rgba(78,78,78,1) 0px -1px 0px;
+   font-weight: bolder;
+}
+.btnMedico:hover {
+   background-color: #8E8E8E;
+   background-image: -o-linear-gradient(90deg , rgb(143,143,143) 0%, rgb(183,183,183) 100%);
+   background-image: -moz-linear-gradient(90deg , rgb(143,143,143) 0%, rgb(183,183,183) 100%);
+   background-image: -webkit-linear-gradient(90deg , rgb(143,143,143) 0%, rgb(183,183,183) 100%);
+   background-image: -ms-linear-gradient(90deg , rgb(143,143,143) 0%, rgb(183,183,183) 100%);
+   background-image: linear-gradient(90deg , rgb(143,143,143) 0%, rgb(183,183,183) 100%);
+}
+.btnMedico:active {
+   background-color: #6D6D6D;
+   -moz-box-shadow:inset 0px 0px 5px rgba(100,100,100,1);
+   -webkit-box-shadow:inset 0px 0px 5px rgba(100,100,100,1);
+   box-shadow:inset 0px 0px 5px rgba(100,100,100,1);
+   background-image: -o-linear-gradient(90deg , rgb(166,166,166) 0%, rgb(127,127,127) 100%);
+   background-image: -moz-linear-gradient(90deg , rgb(166,166,166) 0%, rgb(127,127,127) 100%);
+   background-image: -webkit-linear-gradient(90deg , rgb(166,166,166) 0%, rgb(127,127,127) 100%);
+   background-image: -ms-linear-gradient(90deg , rgb(166,166,166) 0%, rgb(127,127,127) 100%);
+   background-image: linear-gradient(90deg , rgb(166,166,166) 0%, rgb(127,127,127) 100%);
+   text-shadow: none;
+}
+.btnMedico:last-child{
+   margin-left: 26.5%;
+   margin-bottom: 5px
+}
+
+/*---------------------------Sección Enfermero------------------------*/
+#seccionEnfermero{
+   background: url("../img/enfermera.png") no-repeat;
+	background-size: 100% 100.3%;
+   height: 470px;
+   z-index: 4
+}
+#contenedorEnfermero{
+   position: absolute;
+   right: 0;
+   font-family: sans-serif;
+   width: 40% ; height: 390px;
+   margin: 40px 120px; padding: 0 20px;
+}
+#h1Enfermero{
+   text-align: center;
+   font-size: 40px;
+   margin: 0
+}
+#pEnfermero{
+   font-size: 18px;
+   text-align: justify;
+   margin: 40px 0 0; padding: 0 0 40px;
+   color: #838383; height: 90px;
+   border-bottom: 1px solid #ccc
+}
+#contenedordeRegistroEnfermero{
+   background: #ededed;
+   float: left;
+   width: 55%; height: 240px;
+   padding: 10px; margin: 50px 110px;
+   border: 1px solid #ccc;
+   box-shadow: 0 0 10px #cccddd;
+}
+#contenedordeConsultaEnfermero{
+   background: #ededed;
+   float: right;
+   width: 35%; height: 240px;
+   padding: 10px; margin: 50px 20px;
+   border: 1px solid #ccc;
+   box-shadow: 0 0 10px #cccddd;
+} 
+.btnEnfermero{
+   width: 189px; height: 50px;
+   margin-top: 15px;
+   margin-left: 55px;
+   font-size: 18px;
+   font-family: 'Helvetica';
+   border-radius: 3px;
+   background-color: #85DD7C;
+   border: 1px solid #158D34;
+   -moz-box-shadow:inset 0px 0px 1px rgba(26,154,72,1);
+   -webkit-box-shadow:inset 0px 0px 1px rgba(26,154,72,1);
+   box-shadow:inset 0px 0px 1px rgba(26,154,72,1);
+   background-image: -o-linear-gradient(90deg , rgb(112,201,101) 0%, rgb(182,237,176) 100%);
+   background-image: -moz-linear-gradient(90deg , rgb(112,201,101) 0%, rgb(182,237,176) 100%);
+   background-image: -webkit-linear-gradient(90deg , rgb(112,201,101) 0%, rgb(182,237,176) 100%);
+   background-image: -ms-linear-gradient(90deg , rgb(112,201,101) 0%, rgb(182,237,176) 100%);
+   background-image: linear-gradient(90deg , rgb(112,201,101) 0%, rgb(182,237,176) 100%);
+   color: #1d7819;
+   text-shadow: rgba(254,252,252,0.5) 0px 1px 0px;
+}
+.btnEnfermero:hover {
+   background-color: #A7ED9E;
+   background-image: -o-linear-gradient(90deg , rgb(138,211,129) 0%, rgb(204,237,200) 100%);
+   background-image: -moz-linear-gradient(90deg , rgb(138,211,129) 0%, rgb(204,237,200) 100%);
+   background-image: -webkit-linear-gradient(90deg , rgb(138,211,129) 0%, rgb(204,237,200) 100%);
+   background-image: -ms-linear-gradient(90deg , rgb(138,211,129) 0%, rgb(204,237,200) 100%);
+   background-image: linear-gradient(90deg , rgb(138,211,129) 0%, rgb(204,237,200) 100%);
+}
+.btnEnfermero:active {
+   background-color: #5DC34E;
+   -moz-box-shadow:inset 0px 0px 5px rgba(26,154,72,1);
+   -webkit-box-shadow:inset 0px 0px 5px rgba(26,154,72,1);
+   box-shadow:inset 0px 0px 5px rgba(26,154,72,1);
+   background-image: -o-linear-gradient(90deg , rgb(182,237,176) 0%, rgb(112,201,101) 100%);
+   background-image: -moz-linear-gradient(90deg , rgb(182,237,176) 0%, rgb(112,201,101) 100%);
+   background-image: -webkit-linear-gradient(90deg , rgb(182,237,176) 0%, rgb(112,201,101) 100%);
+   background-image: -ms-linear-gradient(90deg , rgb(182,237,176) 0%, rgb(112,201,101) 100%);
+   background-image: linear-gradient(90deg , rgb(182,237,176) 0%, rgb(112,201,101) 100%);
+   text-shadow: none;
+}
+
+/*---------------------------Sección Medicina------------------------*/
+#seccionMedicina{
+   background: url("../img/medicamento.png") no-repeat;
+	background-size: 100% 100.3%;
+   height: 470px;
+   z-index: 4
+}
+#contenedorMedicina{
+   position: absolute;
+   font-family: sans-serif;
+   width: 35% ; 390px;
+   margin: 90px 50px; padding: 0 20px;
+}
+#h1Medicina{
+   text-align: center;
+   font-size: 40px;
+   margin: 0
+}
+#pMedicina{
+   font-size: 20px;
+   text-align: justify;
+   margin: 60px 0;
+   color: #838383;
+}
+.btnMedicina{
+   width: 46.7%; height: 50px;
+   font-size: 18px;
+   font-family: 'Helvetica';
+   border-radius: 3px;
+   color: #1E4F92;
+	background-color: #5489D0;
+	border: 1px solid #3E6491;
+	text-shadow: rgba(254,252,252,0.5) 0px 1px 0px;
+	-moz-box-shadow:inset 0px 0px 1px rgba(79,122,162,1);
+	-webkit-box-shadow:inset 0px 0px 1px rgba(79,122,162,1);
+	box-shadow:inset 0px 0px 1px rgba(79,122,162,1);
+	background-image: -o-linear-gradient(90deg , rgb(52,125,192) 0%, rgb(156,196,241) 100%);
+	background-image: -moz-linear-gradient(90deg , rgb(52,125,192) 0%, rgb(156,196,241) 100%);
+	background-image: -webkit-linear-gradient(90deg , rgb(52,125,192) 0%, rgb(156,196,241) 100%);
+	background-image: -ms-linear-gradient(90deg , rgb(52,125,192) 0%, rgb(156,196,241) 100%);
+	background-image: linear-gradient(90deg , rgb(52,125,192) 0%, rgb(156,196,241) 100%);
+}
+.btnMedicina:hover{
+	background-color: #86B1EC;
+	background-image: -o-linear-gradient(90deg , rgb(89,149,206) 0%, rgb(183,210,241) 100%);
+	background-image: -moz-linear-gradient(90deg , rgb(89,149,206) 0%, rgb(183,210,241) 100%);
+	background-image: -webkit-linear-gradient(90deg , rgb(89,149,206) 0%, rgb(183,210,241) 100%);
+	background-image: -ms-linear-gradient(90deg , rgb(89,149,206) 0%, rgb(183,210,241) 100%);
+	background-image: linear-gradient(90deg , rgb(89,149,206) 0%, rgb(183,210,241) 100%);
+}
+.btnMedicina:active{
+    background-color: #2964B4;
+	-moz-box-shadow:inset 0px 0px 5px rgba(79,122,162,1);
+	-webkit-box-shadow:inset 0px 0px 5px rgba(79,122,162,1);
+	box-shadow:inset 0px 0px 5px rgba(79,122,162,1);
+	background-image: -o-linear-gradient(90deg , rgb(156,196,241) 0%, rgb(52,125,192) 100%);
+	background-image: -moz-linear-gradient(90deg , rgb(156,196,241) 0%, rgb(52,125,192) 100%);
+	background-image: -webkit-linear-gradient(90deg , rgb(156,196,241) 0%, rgb(52,125,192) 100%);
+	background-image: -ms-linear-gradient(90deg , rgb(156,196,241) 0%, rgb(52,125,192) 100%);
+	background-image: linear-gradient(90deg , rgb(156,196,241) 0%, rgb(52,125,192) 100%);
+	text-shadow: none;
+}
+.btnMedicina:last-child{
+   margin-left: 25px
+}
+
+/*---------------------------Sección Paciente------------------------*/
+#seccionPacientes{
+   background: url("../img/ajustes.png") no-repeat;
+	background-size: 100% 100.3%;
+   height: 470px;
+   z-index: 4
+}
+#contenedorPacientes{
+   position: absolute;
+   right: 0;
+   font-family: sans-serif;
+   width: 40% ; height: 120px;
+   margin: 170px 40px; padding: 0 20px;
+}
+#h1Pacientes{
+   text-align: center;
+   font-size: 40px;
+   margin: 0
+}
+#pMedicina{
+   font-size: 20px;
+   text-align: center;
+   margin: 20px 0;
+   color: #838383;
+}
+.btnPaciente{
+   width: 46%; height: 50px;
+   font-size: 18px;
+   margin-top: 15px;
+   margin-left: 150px;
+   border-radius: 3px;
+   background-color: #848484;
+   border: 1px solid #515151;
+   -moz-box-shadow:inset 0px 0px 1px rgba(100,100,100,1);
+   -webkit-box-shadow:inset 0px 0px 1px rgba(100,100,100,1);
+   box-shadow:inset 0px 0px 1px rgba(100,100,100,1);
+   background-image: -o-linear-gradient(90deg , rgb(127,127,127) 0%, rgb(166,166,166) 100%);
+   background-image: -moz-linear-gradient(90deg , rgb(127,127,127) 0%, rgb(166,166,166) 100%);
+   background-image: -webkit-linear-gradient(90deg , rgb(127,127,127) 0%, rgb(166,166,166) 100%);
+   background-image: -ms-linear-gradient(90deg , rgb(127,127,127) 0%, rgb(166,166,166) 100%);
+   background-image: linear-gradient(90deg , rgb(127,127,127) 0%, rgb(166,166,166) 100%);
+   font-family: 'Helvetica';
+   color: #FFFFFF;
+   text-shadow: rgba(78,78,78,1) 0px -1px 0px;
+   font-weight: bolder;
+}
+.btnPaciente:hover {
+   background-color: #8E8E8E;
+   background-image: -o-linear-gradient(90deg , rgb(143,143,143) 0%, rgb(183,183,183) 100%);
+   background-image: -moz-linear-gradient(90deg , rgb(143,143,143) 0%, rgb(183,183,183) 100%);
+   background-image: -webkit-linear-gradient(90deg , rgb(143,143,143) 0%, rgb(183,183,183) 100%);
+   background-image: -ms-linear-gradient(90deg , rgb(143,143,143) 0%, rgb(183,183,183) 100%);
+   background-image: linear-gradient(90deg , rgb(143,143,143) 0%, rgb(183,183,183) 100%);
+}
+.btnPaciente:active {
+   background-color: #6D6D6D;
+   -moz-box-shadow:inset 0px 0px 5px rgba(100,100,100,1);
+   -webkit-box-shadow:inset 0px 0px 5px rgba(100,100,100,1);
+   box-shadow:inset 0px 0px 5px rgba(100,100,100,1);
+   background-image: -o-linear-gradient(90deg , rgb(166,166,166) 0%, rgb(127,127,127) 100%);
+   background-image: -moz-linear-gradient(90deg , rgb(166,166,166) 0%, rgb(127,127,127) 100%);
+   background-image: -webkit-linear-gradient(90deg , rgb(166,166,166) 0%, rgb(127,127,127) 100%);
+   background-image: -ms-linear-gradient(90deg , rgb(166,166,166) 0%, rgb(127,127,127) 100%);
+   background-image: linear-gradient(90deg , rgb(166,166,166) 0%, rgb(127,127,127) 100%);
+   text-shadow: none;
+}
+/*-------------------------Administracion de Medico----------------------*/
+
+/*-----------------------------Registro-------------------------*/
+
+#h1Registro{
+   padding: 10px 10px 10px;
+   margin: 0;
+   font-size: 16px;
+   font-weight: 600;
+   border-radius: 10px 10px 0 0;
+   border-bottom: 1px solid #ccc;
+   color: #717174;
+   background: #fcfcfc
+}
+#formRegistro{
+   margin: 0 auto;
+   width: 90%
+}
+article form table {
+   margin: 20px auto;
+   width: 80%
+} 
+.tdLabelRegistro{
+   text-align: right;
+   width: 35%     
+}
+.labelRegistro{
+   margin: 0 30px; 
+   font-size: 15px
+}
+.inputRegistro{
+   border: 1px solid #aaa;
+	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+	border-radius: 1px; 
+	-moz-transition: padding .25s; 
+	-webkit-transition: padding .25s; 
+	-o-transition: padding .25s; 
+	transition: padding .25s; 
+	height: 20px; width: 60%; 
+	padding: 5px 8px; 
+	margin: 5px auto; 
+	font-size: 14px;
+}
+.txtAreaRegistro{
+   border: 1px solid #aaa;
+	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+	border-radius: 1px; 
+	-moz-transition: padding .25s; 
+	-webkit-transition: padding .25s; 
+	-o-transition: padding .25s; 
+	transition: padding .25s; 
+	height: 60px; width: 60%; 
+	padding: 5px 8px; 
+	margin: 5px auto; 
+	font-size: 14px;
+   font-family: sans-serif;
+}
+.selectRegistro{
+   border: 1px solid #aaa;
+	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+	border-radius: 1px; 
+	-moz-transition: padding .25s; 
+	-webkit-transition: padding .25s; 
+	-o-transition: padding .25s; 
+	transition: padding .25s; 
+	height: 32px; width: 63.4%; 
+	padding: 5px 8px; 
+	margin: 5px auto; 
+	font-size: 14px;   
+}
+.contenedorBtnRegistro{
+   margin:10px auto 10px;
+   width: 60%
+}
+.btnRegistro{
+   margin-left: 330px;
+   width: 30%; height: 35px;
+   font-size: 14px;
+   border-radius: 2px;
+   background-color: #F39C45;
+	border: 1px solid #A87017;
+	-moz-box-shadow:inset 0px 0px 1px rgba(184,129,39,1);
+	-webkit-box-shadow:inset 0px 0px 1px rgba(184,129,39,1);
+	box-shadow:inset 0px 0px 1px rgba(184,129,39,1);
+	background-image: -o-linear-gradient(90deg , rgb(250,153,60) 0%, rgb(244,197,140) 100%);
+	background-image: -moz-linear-gradient(90deg , rgb(250,153,60) 0%, rgb(244,197,140) 100%);
+	background-image: -webkit-linear-gradient(90deg , rgb(250,153,60) 0%, rgb(244,197,140) 100%);
+	background-image: -ms-linear-gradient(90deg , rgb(250,153,60) 0%, rgb(244,197,140) 100%);
+	background-image: linear-gradient(90deg , rgb(250,153,60) 0%, rgb(244,197,140) 100%);
+	color: #A8580B;
+	text-shadow: rgba(254,252,252,0.5) 0px 1px 0px;
+}
+.btnRegistro:hover{
+   background-color: #EAB26C;
+	background-image: -o-linear-gradient(90deg , rgb(248,169,91) 0%, rgb(244,210,170) 100%);
+	background-image: -moz-linear-gradient(90deg , rgb(248,169,91) 0%, rgb(244,210,170) 100%);
+	background-image: -webkit-linear-gradient(90deg , rgb(248,169,91) 0%, rgb(244,210,170) 100%);
+	background-image: -ms-linear-gradient(90deg , rgb(248,169,91) 0%, rgb(244,210,170) 100%);
+	background-image: linear-gradient(90deg , rgb(248,169,91) 0%, rgb(244,210,170) 100%);
+}
+.btnRegistro:active{
+   background-color: #E77E21;
+	-moz-box-shadow:inset 0px 0px 5px rgba(184,129,39,1);
+	-webkit-box-shadow:inset 0px 0px 5px rgba(184,129,39,1);
+	box-shadow:inset 0px 0px 5px rgba(184,129,39,1);
+	background-image: -o-linear-gradient(90deg , rgb(244,197,140) 0%, rgb(250,153,60) 100%);
+	background-image: -moz-linear-gradient(90deg , rgb(244,197,140) 0%, rgb(250,153,60) 100%);
+	background-image: -webkit-linear-gradient(90deg , rgb(244,197,140) 0%, rgb(250,153,60) 100%);
+	background-image: -ms-linear-gradient(90deg , rgb(244,197,140) 0%, rgb(250,153,60) 100%);
+	background-image: linear-gradient(90deg , rgb(244,197,140) 0%, rgb(250,153,60) 100%);
+	text-shadow: none;
+}
+
+/*-----------------------------Consulta Medico-------------------------*/
+#h1ConsultaMedico{
+   padding: 10px 10px 10px;
+   margin: 0;
+   font-size: 16px;
+   font-weight: 600;
+   border-radius: 10px 10px 0 0;
+   border-bottom: 1px solid #ccc;
+   color: #717174;
+   background: #fcfcfc
+}
+#contenedorBusquedaMedico{
+   margin: 15px auto 0;
+   width: 45%
+}
+#contenedorBusquedaMedico label{
+   margin-right: 15px;
+   margin-left: 35px
+}
+#contenedorBusquedaMedico input{
+   border: 1px solid #aaa;
+	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+	border-radius: 1px; 
+	-moz-transition: padding .25s; 
+	-webkit-transition: padding .25s; 
+	-o-transition: padding .25s; 
+	transition: padding .25s; 
+	height: 20px; width: 60%; 
+	padding: 5px 8px; 
+	margin: 5px auto; 
+	font-size: 13px;
+}
+#contenedorTablaConsulta{
+   margin: 0 auto 20px;
+   padding: 10px 0;
+   font-size: 13px;
+   overflow-x: auto;
+   width: 98%
+   
+}
+#contenedorTablaConsulta table{
+   margin: 0 auto;
+   width: 1175px;
+   box-shadow: 0 4px 10px #cccddd;
+}   
+#trEncabezado{
+   background: #032a6c;
+   height: 40px;
+}
+#contenedorTablaConsulta table th{
+   color: white;
+   padding: 4px 10px ;
+   margin:  7px auto;
+   display: block;
+   float: left;
+   border-right: 1px solid #0f1651;
+}
+#contenedorTablaConsulta table th:last-child{
+ border-right: none 
+}
+#trPar{
+   background: whitesmoke
+}
+#contenedorTablaConsulta table td{
+   padding: 8px 10px ;
+   margin:  0px auto;
+   display: block;
+   float: left;
+}
+.tdCedula{ width: 83px }
+.tdNombre{ width: 235px }
+.tdUsuario{ width: 125px }
+.tdContraseña{ width: 125px }
+.tdEmail{ width: 222px }
+.tdEspecialidad{ width: 115px }
+.tdEditaEliminar{ width: 120px }
+.tdHabitacion{ width: 75px;text-align: center }
+.tdDescripcion{ width: 295px }
+.tdDescripcion2{ width: 545px }
+.tdId{ width: 45px ; text-align: center }
+.tdNombre2{ width: 140px }
+.tdtipo{ width: 120px }
+
+
+#btnEditar\/Eliminar{
+   color:whitesmoke;
+   height: 28px; width: 34px;
+   border-radius: 4px ;
+   
+}.btnConfirmarEliminacion{
+   margin-left: 15px;
+   background-color: #D85257;
+	border: 1px solid #951119;
+	-moz-box-shadow:inset 0px 0px 1px rgba(167,32,35,1);
+	-webkit-box-shadow:inset 0px 0px 1px rgba(167,32,35,1);
+	box-shadow:inset 0px 0px 1px rgba(167,32,35,1);
+	background-image: -o-linear-gradient(90deg , rgb(208,69,72) 0%, rgb(243,146,147) 100%);
+	background-image: -moz-linear-gradient(90deg , rgb(208,69,72) 0%, rgb(243,146,147) 100%);
+	background-image: -webkit-linear-gradient(90deg , rgb(208,69,72) 0%, rgb(243,146,147) 100%);
+	background-image: -ms-linear-gradient(90deg , rgb(208,69,72) 0%, rgb(243,146,147) 100%);
+	background-image: linear-gradient(90deg , rgb(208,69,72) 0%, rgb(243,146,147) 100%);
+	color: #A7000F;
+	text-shadow: rgba(254,252,252,0.5) 0px 1px 0px;
+}
+.btnConfirmarEliminacion:hover{
+   background-color: #F07D81;
+	background-image: -o-linear-gradient(90deg , rgb(216,90,93) 0%, rgb(243,167,169) 100%);
+	background-image: -moz-linear-gradient(90deg , rgb(216,90,93) 0%, rgb(243,167,169) 100%);
+	background-image: -webkit-linear-gradient(90deg , rgb(216,90,93) 0%, rgb(243,167,169) 100%);
+	background-image: -ms-linear-gradient(90deg , rgb(216,90,93) 0%, rgb(243,167,169) 100%);
+	background-image: linear-gradient(90deg , rgb(216,90,93) 0%, rgb(243,167,169) 100%);
+}
+.btnConfirmarEliminacion:active{
+   background-color: #C4262E;
+	-moz-box-shadow:inset 0px 0px 5px rgba(167,32,35,1);
+	-webkit-box-shadow:inset 0px 0px 5px rgba(167,32,35,1);
+	box-shadow:inset 0px 0px 5px rgba(167,32,35,1);
+	background-image: -o-linear-gradient(90deg , rgb(243,146,147) 0%, rgb(208,69,72) 100%);
+	background-image: -moz-linear-gradient(90deg , rgb(243,146,147) 0%, rgb(208,69,72) 100%);
+	background-image: -webkit-linear-gradient(90deg , rgb(243,146,147) 0%, rgb(208,69,72) 100%);
+	background-image: -ms-linear-gradient(90deg , rgb(243,146,147) 0%, rgb(208,69,72) 100%);
+	background-image: linear-gradient(90deg , rgb(243,146,147) 0%, rgb(208,69,72) 100%);
+	text-shadow: none;
+}
+.btnLlenarCampos{
+   margin-left: 24px;
+   background-color: #85DD7C;
+	border: 1px solid #158D34;
+	-moz-box-shadow:inset 0px 0px 1px rgba(26,154,72,1);
+	-webkit-box-shadow:inset 0px 0px 1px rgba(26,154,72,1);
+	box-shadow:inset 0px 0px 1px rgba(26,154,72,1);
+	background-image: -o-linear-gradient(90deg , rgb(112,201,101) 0%, rgb(182,237,176) 100%);
+	background-image: -moz-linear-gradient(90deg , rgb(112,201,101) 0%, rgb(182,237,176) 100%);
+	background-image: -webkit-linear-gradient(90deg , rgb(112,201,101) 0%, rgb(182,237,176) 100%);
+	background-image: -ms-linear-gradient(90deg , rgb(112,201,101) 0%, rgb(182,237,176) 100%);
+	background-image: linear-gradient(90deg , rgb(112,201,101) 0%, rgb(182,237,176) 100%);
+	color: #1d7819;
+	text-shadow: rgba(254,252,252,0.5) 0px 1px 0px;
+}
+.btnLlenarCampos:hover{
+   background-color: #A7ED9E;
+	background-image: -o-linear-gradient(90deg , rgb(138,211,129) 0%, rgb(204,237,200) 100%);
+	background-image: -moz-linear-gradient(90deg , rgb(138,211,129) 0%, rgb(204,237,200) 100%);
+	background-image: -webkit-linear-gradient(90deg , rgb(138,211,129) 0%, rgb(204,237,200) 100%);
+	background-image: -ms-linear-gradient(90deg , rgb(138,211,129) 0%, rgb(204,237,200) 100%);
+	background-image: linear-gradient(90deg , rgb(138,211,129) 0%, rgb(204,237,200) 100%);
+}
+.btnLlenarCampos:active{
+   background-color: #5DC34E;
+	-moz-box-shadow:inset 0px 0px 5px rgba(26,154,72,1);
+	-webkit-box-shadow:inset 0px 0px 5px rgba(26,154,72,1);
+	box-shadow:inset 0px 0px 5px rgba(26,154,72,1);
+	background-image: -o-linear-gradient(90deg , rgb(182,237,176) 0%, rgb(112,201,101) 100%);
+	background-image: -moz-linear-gradient(90deg , rgb(182,237,176) 0%, rgb(112,201,101) 100%);
+	background-image: -webkit-linear-gradient(90deg , rgb(182,237,176) 0%, rgb(112,201,101) 100%);
+	background-image: -ms-linear-gradient(90deg , rgb(182,237,176) 0%, rgb(112,201,101) 100%);
+	background-image: linear-gradient(90deg , rgb(182,237,176) 0%, rgb(112,201,101) 100%);
+	text-shadow: none;
+}
+
+/*-------------------------------Mensajes de Informacion---------------------*/
+#contenedorMensaje{
+   top: 0px;
+   height: 40px; width: 100%;
+   display: none;
+}
+#mensajeError_Confirmacion{
+   font-size: 14px;
+   color:white;
+   font-family: verdana;
+   text-align: center;
+   margin: 0 ; padding: 10px
+}
+#contenedorMensaje2{
+   top: 0px;
+   height: 40px; width: 100%;
+   display: none;
+}
+#mensajeError_Confirmacion2{
+   font-size: 14px;
+   color:white;
+   font-family: verdana;
+   text-align: center;
+   margin: 0 ; padding: 10px
+}
+.lightbox{
+   display:none;
+   position: fixed;
+   top: 0%;
+   left: 0%;
+   width: 100%;
+   height: 100%;
+   background-color: black;
+   z-index:1001;
+   -moz-opacity: 0.8;
+   opacity:.80;
+   filter: alpha(opacity=80);
+}
+.contenidoLightbox{
+   display: none;
+   position: fixed;
+   top: 36%;
+   left: 36%;
+   width: 30%;
+   height: 25%;
+   z-index:1002;
+   
+   border-radius: 3px;
+   background: #a8a6a6;
+}
+header article div aside{
+   border: 1px solid #ccc;
+   margin: 5px;
+   height: 152px;
+   background: whitesmoke
+}
+#pLightbox{
+   font-size:15px ;
+   margin: 50px 20px 0;
+   color: #626161;
+   font-family: verdana
+}
+#btnLightbox{
+   margin-left: 10px;
+   height: 30px; width: 35px;
+   border-radius: 3px;
+}
+header article div aside div{
+   margin: 40px 0 0 265px;
+   
+}
+.btnNoEliminar{
+   background-color: #85DD7C;
+	border: 1px solid #158D34;
+	-moz-box-shadow:inset 0px 0px 1px rgba(26,154,72,1);
+	-webkit-box-shadow:inset 0px 0px 1px rgba(26,154,72,1);
+	box-shadow:inset 0px 0px 1px rgba(26,154,72,1);
+	background-image: -o-linear-gradient(90deg , rgb(112,201,101) 0%, rgb(182,237,176) 100%);
+	background-image: -moz-linear-gradient(90deg , rgb(112,201,101) 0%, rgb(182,237,176) 100%);
+	background-image: -webkit-linear-gradient(90deg , rgb(112,201,101) 0%, rgb(182,237,176) 100%);
+	background-image: -ms-linear-gradient(90deg , rgb(112,201,101) 0%, rgb(182,237,176) 100%);
+	background-image: linear-gradient(90deg , rgb(112,201,101) 0%, rgb(182,237,176) 100%);
+	color: white;
+	text-shadow: rgba(254,252,252,0.5) 0px 1px 0px;
+}
+.btnEliminarMedico{
+   background-color: #D85257;
+	border: 1px solid #951119;
+	-moz-box-shadow:inset 0px 0px 1px rgba(167,32,35,1);
+	-webkit-box-shadow:inset 0px 0px 1px rgba(167,32,35,1);
+	box-shadow:inset 0px 0px 1px rgba(167,32,35,1);
+	background-image: -o-linear-gradient(90deg , rgb(208,69,72) 0%, rgb(243,146,147) 100%);
+	background-image: -moz-linear-gradient(90deg , rgb(208,69,72) 0%, rgb(243,146,147) 100%);
+	background-image: -webkit-linear-gradient(90deg , rgb(208,69,72) 0%, rgb(243,146,147) 100%);
+	background-image: -ms-linear-gradient(90deg , rgb(208,69,72) 0%, rgb(243,146,147) 100%);
+	background-image: linear-gradient(90deg , rgb(208,69,72) 0%, rgb(243,146,147) 100%);
+	color: white;
+	text-shadow: rgba(254,252,252,0.5) 0px 1px 0px;
+}
+.btnEliminarEnfermero{
+   background-color: #D85257;
+   border: 1px solid #951119;
+   -moz-box-shadow:inset 0px 0px 1px rgba(167,32,35,1);
+   -webkit-box-shadow:inset 0px 0px 1px rgba(167,32,35,1);
+   box-shadow:inset 0px 0px 1px rgba(167,32,35,1);
+   background-image: -o-linear-gradient(90deg , rgb(208,69,72) 0%, rgb(243,146,147) 100%);
+   background-image: -moz-linear-gradient(90deg , rgb(208,69,72) 0%, rgb(243,146,147) 100%);
+   background-image: -webkit-linear-gradient(90deg , rgb(208,69,72) 0%, rgb(243,146,147) 100%);
+   background-image: -ms-linear-gradient(90deg , rgb(208,69,72) 0%, rgb(243,146,147) 100%);
+   background-image: linear-gradient(90deg , rgb(208,69,72) 0%, rgb(243,146,147) 100%);
+   color: white;
+   text-shadow: rgba(254,252,252,0.5) 0px 1px 0px;
+}
+.btnEliminarPaciente{
+   background-color: #D85257;
+   border: 1px solid #951119;
+   -moz-box-shadow:inset 0px 0px 1px rgba(167,32,35,1);
+   -webkit-box-shadow:inset 0px 0px 1px rgba(167,32,35,1);
+   box-shadow:inset 0px 0px 1px rgba(167,32,35,1);
+   background-image: -o-linear-gradient(90deg , rgb(208,69,72) 0%, rgb(243,146,147) 100%);
+   background-image: -moz-linear-gradient(90deg , rgb(208,69,72) 0%, rgb(243,146,147) 100%);
+   background-image: -webkit-linear-gradient(90deg , rgb(208,69,72) 0%, rgb(243,146,147) 100%);
+   background-image: -ms-linear-gradient(90deg , rgb(208,69,72) 0%, rgb(243,146,147) 100%);
+   background-image: linear-gradient(90deg , rgb(208,69,72) 0%, rgb(243,146,147) 100%);
+   color: white;
+   text-shadow: rgba(254,252,252,0.5) 0px 1px 0px;
+}
+.btnEliminarMedicina{
+   background-color: #D85257;
+   border: 1px solid #951119;
+   -moz-box-shadow:inset 0px 0px 1px rgba(167,32,35,1);
+   -webkit-box-shadow:inset 0px 0px 1px rgba(167,32,35,1);
+   box-shadow:inset 0px 0px 1px rgba(167,32,35,1);
+   background-image: -o-linear-gradient(90deg , rgb(208,69,72) 0%, rgb(243,146,147) 100%);
+   background-image: -moz-linear-gradient(90deg , rgb(208,69,72) 0%, rgb(243,146,147) 100%);
+   background-image: -webkit-linear-gradient(90deg , rgb(208,69,72) 0%, rgb(243,146,147) 100%);
+   background-image: -ms-linear-gradient(90deg , rgb(208,69,72) 0%, rgb(243,146,147) 100%);
+   background-image: linear-gradient(90deg , rgb(208,69,72) 0%, rgb(243,146,147) 100%);
+   color: white;
+   text-shadow: rgba(254,252,252,0.5) 0px 1px 0px;
+}
+
+/*-----------------------------Font Face Glyphicons-----------------------*/
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.glyphicon-trash:before {
+  content: "\e020";
+}
+.glyphicon-pencil:before {
+  content: "\270f";
+}
+.glyphicon-ok:before {
+  content: "\e013";
+}
+.glyphicon-remove:before {
+  content: "\e014";
+}
