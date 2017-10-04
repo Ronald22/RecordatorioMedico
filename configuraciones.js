@@ -5,8 +5,7 @@ exports.dbConfig = {
 	database: "RecordatorioMedico",
 	port: 1433,
 	options: {
-        encrypt: false // Use this if you're on Windows Azure
-        //,instanceName: 'SQLEXPRESS'
+        encrypt: true
     }
 };
 
