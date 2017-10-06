@@ -3,7 +3,7 @@ var httpMsgs = require("../nucleo/mensajesHTTPs");
 var util = require("util");
 
 exports.getList = function (req, resp){
-	db.executeSql("SELECT * FROM  Medico", function(data, err){
+	db.executeSql("SELECT * FROM  RecordatorioMedico.dbo.Medico", function(data, err){
 		if (err){
 			httpMsgs.show500(req, resp, err);
 		}
@@ -14,7 +14,7 @@ exports.getList = function (req, resp){
 };
 
 exports.get = function (req, resp, cedula){
-	db.executeSql("SELECT * FROM  Medico WHERE cedula LIKE '"+cedula+"%' or nombre LIKE '"+cedula+"%'", function(data, err){
+	db.executeSql("SELECT * FROM  RecordatorioMedico.dbo.Medico WHERE cedula LIKE '"+cedula+"%' or nombre LIKE '"+cedula+"%'", function(data, err){
 		if (err){
 			httpMsgs.show500(req, resp, err);
 		}
@@ -29,7 +29,7 @@ exports.add = function (req, resp, reqBody){
 		if (!reqBody) throw new Error("Entrada no valida");
 		var data = JSON.parse(reqBody);
 		if(data){
-			var sql = "insert into Medico (cedula, usuario, contraseña, nombre, apellido, email, especialidad) values";
+			var sql = "insert into RecordatorioMedico.dbo.Medico (cedula, usuario, contraseña, nombre, apellido, email, especialidad) values";
 			sql+= util.format("(%d, '%s', '%s', '%s', '%s', '%s', '%s')",data.cedula, data.usuario, data.contraseña, data.nombre, data.apellido, data.email, data.especialidad);
 			db.executeSql(sql, function(data, err){
 				if (err){
@@ -57,7 +57,7 @@ exports.update = function (req, resp, reqBody){
 
 			if (!data.cedula) throw new Error("Usuario no registrado");
 			
-			var sql = "Update Medico Set ";
+			var sql = "Update RecordatorioMedico.dbo.Medico Set ";
 			var isDataProvide = false;
 
 			if (data.usuario) {
@@ -114,7 +114,7 @@ exports.delete = function (req, resp, reqBody){
 
 			if (!data.cedula) throw new Error("Usuario no registrado");
 			
-			var sql = "Delete from Medico ";
+			var sql = "Delete from RecordatorioMedico.dbo.Medico ";
 			sql+= " Where cedula = " + data.cedula;
 
 			db.executeSql(sql, function(data, err){

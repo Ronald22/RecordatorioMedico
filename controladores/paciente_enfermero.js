@@ -29,7 +29,7 @@ exports.add = function (req, resp, reqBody){
 		if (!reqBody) throw new Error("Entrada no valida");
 		var data = JSON.parse(reqBody);
 		if(data){
-			var sql = "INSERT INTO Enfermero_Paciente (cedula_Paciente, cedula_Enfermero) values";
+			var sql = "INSERT INTO RecordatorioMedico.dbo.Enfermero_Paciente (cedula_Paciente, cedula_Enfermero) values";
 			sql+= util.format("(%d, %d)",data.cedula_Paciente, data.cedula_Enfermero);
 			db.executeSql(sql, function(data, err){
 				if (err){
@@ -57,7 +57,7 @@ exports.update = function (req, resp, reqBody){
 
 			if (!data.cedula_Paciente) throw new Error("Usuario no registrado");
 			
-			var sql = "Update Enfermero_Paciente Set ";
+			var sql = "Update RecordatorioMedico.dbo.Enfermero_Paciente Set ";
 			var isDataProvide = false;
 
 			if (data.cedula_Enfermero) {
@@ -94,7 +94,7 @@ exports.delete = function (req, resp, reqBody){
 
 			if (!data.cedula_Paciente) throw new Error("Usuario no registrado");
 			
-			var sql = "Delete from Enfermero_Paciente ";
+			var sql = "Delete from RecordatorioMedico.dbo.Enfermero_Paciente ";
 			sql+= " Where cedula_Paciente = " + data.cedula_Paciente;
 
 			db.executeSql(sql, function(data, err){

@@ -3,7 +3,7 @@ var httpMsgs = require("../nucleo/mensajesHTTPs");
 var util = require("util");
 
 exports.getList = function (req, resp){
-	db.executeSql("SELECT E.cedula, E.usuario, E.contraseña, E.nombre, E.apellido, E.email, T.id, T.hora_Entrada, T.hora_Salida FROM Enfermero E , Turno T WHERE E.id_Turno = T.id", function(data, err){
+	db.executeSql("SELECT E.cedula, E.usuario, E.contraseña, E.nombre, E.apellido, E.email, T.id, T.hora_Entrada, T.hora_Salida FROM RecordatorioMedico.dbo.Enfermero E , RecordatorioMedico.dbo.Turno T WHERE E.id_Turno = T.id", function(data, err){
 		if (err){
 			httpMsgs.show500(req, resp, err);
 		}
@@ -14,7 +14,7 @@ exports.getList = function (req, resp){
 };
 
 exports.get = function (req, resp, cedula){
-	db.executeSql("SELECT E.cedula, E.usuario, E.contraseña, E.nombre, E.apellido, E.email, T.id, T.hora_Entrada, T.hora_Salida FROM Enfermero E , Turno T WHERE E.id_Turno = T.id and (E.cedula LIKE '"+cedula+"%' or E.nombre LIKE '"+cedula+"%')", function(data, err){
+	db.executeSql("SELECT E.cedula, E.usuario, E.contraseña, E.nombre, E.apellido, E.email, T.id, T.hora_Entrada, T.hora_Salida FROM RecordatorioMedico.dbo.Enfermero E , RecordatorioMedico.dbo.Turno T WHERE E.id_Turno = T.id and (E.cedula LIKE '"+cedula+"%' or E.nombre LIKE '"+cedula+"%')", function(data, err){
 		if (err){
 			httpMsgs.show500(req, resp, err);
 		}
@@ -29,7 +29,7 @@ exports.add = function (req, resp, reqBody){
 		if (!reqBody) throw new Error("Entrada no valida");
 		var data = JSON.parse(reqBody);
 		if(data){
-			var sql = "INSERT INTO Enfermero (cedula, usuario, contraseña, nombre, apellido, email, id_Turno) values";
+			var sql = "INSERT INTO RecordatorioMedico.dbo.Enfermero (cedula, usuario, contraseña, nombre, apellido, email, id_Turno) values";
 			sql+= util.format("(%d, '%s', '%s', '%s', '%s', '%s', %d)",data.cedula, data.usuario, data.contraseña, data.nombre, data.apellido, data.email, data.id_Turno);
 			db.executeSql(sql, function(data, err){
 				if (err){
@@ -57,7 +57,7 @@ exports.update = function (req, resp, reqBody){
 
 			if (!data.cedula) throw new Error("Usuario no registrado");
 			
-			var sql = "Update Enfermero Set ";
+			var sql = "Update RecordatorioMedico.dbo.Enfermero Set ";
 			var isDataProvide = false;
 
 			if (data.usuario) {
@@ -114,7 +114,7 @@ exports.delete = function (req, resp, reqBody){
 
 			if (!data.cedula) throw new Error("Usuario no registrado");
 			
-			var sql = "Delete from Enfermero ";
+			var sql = "DELETE FROM RecordatorioMedico.dbo.Enfermero ";
 			sql+= " Where cedula = " + data.cedula;
 
 			db.executeSql(sql, function(data, err){

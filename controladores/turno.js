@@ -3,7 +3,7 @@ var httpMsgs = require("../nucleo/mensajesHTTPs");
 var util = require("util");
 
 exports.getList = function (req, resp){
-	db.executeSql("SELECT * FROM  Turno", function(data, err){
+	db.executeSql("SELECT * FROM  RecordatorioMedico.dbo.Turno", function(data, err){
 		if (err){
 			httpMsgs.show500(req, resp, err);
 		}
