@@ -12,7 +12,7 @@ body{
 }
 #diseñoBlanco{
 	float: left;
-	width: 30%; height: 43px
+	width: 10%; height: 43px
 }
 #logo{
 	display: block;
@@ -20,11 +20,14 @@ body{
 	font-weight: bolder;
 	font-size: 25px;
 	color: #333;
-	padding:6px 40px;
+	padding:1px 20px;
+}
+#\ logoMS{
+	height: 40px; width: 250px
 }
 #borde{
     position: absolute;
-    left: 30%;
+    left: 21%;
     border-top: 43px solid white;
     border-right: 53px solid transparent;
 }
@@ -32,7 +35,7 @@ body{
 	background:#333; 
 	background-image: -webkit-linear-gradient(bottom, #1B1B1B 10%, #363636 55%, #1B1B1B 78%);
     float: right;
-    width: 70% ; height: 43px;     
+    width: 79% ; height: 43px;     
 }
 
 /*------------------------Inicio de Sesion----------------------*/
